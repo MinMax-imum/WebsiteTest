@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Cookie测试页面 -->
+<html>
+    <head>
+        <title>Cookie 测试</title>
+        <link rel = "shortcut icon" href = "" type="image/png">
+        <link rel = "stylesheet" href = "./cookieTestStyle.css" type = "text/css">
+        <script src = "./cookieTestScript.js"></script>
+    </head>
+    <body>
+        <div class = "bodyBox">
+            <h1>Cookie 测试</h1>
+            <h2><i>Cookie</i> Test</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <input type = "text" id = "keyInput" spellcheck = "false" title = "输入key">
+                            <input type = "text" id = "timeInput" spellcheck = "false" title = "过期时间">
+                            <button class = "button" id = "readCookie">查看 Cookie</button>
+                            <button class = "button" id = "storeCookie">存入 Cookie</button>
+                            <button class = "button" id = "close">关闭页面</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>文 本 内 容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- <td class = "row"><textarea id = "textInput" spellcheck = "false"></textarea></td> -->
+                        <td><textarea id = "textInput"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
