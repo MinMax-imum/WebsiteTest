@@ -14,22 +14,45 @@
             <table>
                 <thead>
                     <tr>
-                        <td>
-                            <input type = "text" id = "keyInput" spellcheck = "false" title = "输入key">
-                            <input type = "text" id = "timeInput" spellcheck = "false" title = "过期时间">
-                            <button class = "button" id = "readCookie">查看 Cookie</button>
-                            <button class = "button" id = "storeCookie">存入 Cookie</button>
+                        <td colspan = "5">
+                            <button class = "button" id = "readCookie" title = "按照 name 查询 Cookie 值">查询 Cookie</button>
+                            <button class = "button" id = "readAllCookie" title = "查询全部 Cookie 的 name 和值">查看全部 Cookie</button>
+                            <button class = "button" id = "newCookie" title = "创建新的 Cookie 或修改 Cookie 的值">创建 Cookie</button>
+                            <button class = "button" id = "storeCookie" disabled = "true" title = "修改后保存 Cookie">保存 Cookie</button>
                             <button class = "button" id = "close">关闭页面</button>
                         </td>
                     </tr>
                     <tr>
-                        <th>文 本 内 容</th>
+                        <th></th>
+                        <th>name</th>
+                        <th>value</th>
+                        <th>expires</th>
+                        <th>path</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <span id = "cookieList">
+                        <tr>
+                            <td><input type = "radio" class = "radioInput" id = "radio0"></td>
+                            <td>示例</td>
+                            <td>value</td>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                    </span>
                     <tr>
-                        <!-- <td class = "row"><textarea id = "textInput" spellcheck = "false"></textarea></td> -->
-                        <td><textarea id = "textInput"></textarea></td>
+                        <td><input type = "radio" class = "radioInput" id = "radioSlitText"></td>
+                        <td><input type = "text" class = "slitText input" id = "nameInput" spellcheck = "false" title = "输入name名"></td>
+                        <td><input type = "text" class = "slitText input" id = "valueInput" spellcheck = "false" title = "输入值"></td>
+                        <td><input type = "text" class = "slitText input" id = "timeInput" title = "过期时间"></td>
+                        <td><input type = "text" class = "slitText input" id = "pathInput" spellcheck = "false" title = "输入路径" value = "/"></td>
+                    </tr>
+                    <tr>
+                        <td><input type = "radio" class = "radioInput" id = "radioOverallText"></td>
+                        <td colspan = "4"><input type = "text" class = "overallText input" id = "overallTextInput" spellcheck = "false" title = "输入 cookie 项"></td>
+                    </tr>
+                    <tr>
+                        <td colspan = "5"><textarea id = "overallCookieTextarea" spellcheck = "false" title = "显示 document.cookie"></textarea></td>
                     </tr>
                 </tbody>
             </table>
