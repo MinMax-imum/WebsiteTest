@@ -5,43 +5,42 @@
 }
 h1{text-align: center;}
 h2{text-align: center;}
-table{width: 100%;}
-#pathInput{
-    font-family: 'Times New Roman', Times;
-    width: 48%;
-    height: 1.5em;
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
 }
 .button{
     width: 12%;
-    height: 2em;
+    height: 3em;
+    margin: 0.5em
 }
-th{text-align: center;}
-#textInput{
-    /* border:  2px solid black; */
-    height: 30em;
+th{
+    border: solid 2px black;
+    font-size: 1.2em;
+    padding: 0.3em;
 }
+tbody td{
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    padding: 0.2em;
+}
+#radioSlitText{visibility: hidden;}
+#radioOverallText{visibility: hidden;}
+.input{
+    font-family: 'Times New Roman', Times;
+    height: 1.2em;
+    visibility: hidden;
+}
+.input.slitText{width: 95%;}
+.input.overallText{width: 99%;}
 textarea{
     font-family: 'Times New Roman', Times;
-    font-size: 16px;
-    margin-top: 7px;
-    width: 98%;
-    height: 100%;
+    /* font-size: 16px; */
+    margin-top: 3em;
+    width: 96%;
     padding: 5px;
-    word-wrap: break-word;
-    overflow-y: scroll;
-    border: 2px solid black;
     border-radius: 4px;
     resize: none;
-}
-#textOutput{
-    font-size: 16px;
-    margin-top: 3px;
-    margin-left: 3px;
-    width: 98%;
-    height: 100%;
-    padding: 5px;
-    word-wrap: break-word;
-    overflow-y: scroll;
-    border: 2px solid black;
-    border-radius: 4px;
+    height: 10em;
 }
