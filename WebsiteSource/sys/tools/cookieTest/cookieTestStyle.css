@@ -13,14 +13,14 @@ table{
 .button{
     width: 12%;
     height: 3em;
-    margin: 0.5em
+    margin: 0.25em
 }
 th{
     border: solid 2px black;
     font-size: 1.2em;
     padding: 0.3em;
 }
-tbody td{
+tbody td, tfoot td{
     border-left: solid 2px black;
     border-right: solid 2px black;
     padding: 0.2em;
