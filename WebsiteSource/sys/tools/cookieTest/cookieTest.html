@@ -15,10 +15,11 @@
                 <thead>
                     <tr>
                         <td colspan = "5">
-                            <button class = "button" id = "readCookie" title = "按照 name 查询 Cookie 值">查询 Cookie</button>
-                            <button class = "button" id = "readAllCookie" title = "查询全部 Cookie 的 name 和值">查看全部 Cookie</button>
-                            <button class = "button" id = "newCookie" title = "创建新的 Cookie 或修改 Cookie 的值">创建 Cookie</button>
-                            <button class = "button" id = "storeCookie" disabled = "true" title = "修改后保存 Cookie">保存 Cookie</button>
+                            <button class = "button" id = "readCookie" title = "按照 name 查询 Cookie 值">查询</button>
+                            <button class = "button" id = "readAllCookie" title = "查询全部 Cookie 的 name 和值">查看全部</button>
+                            <button class = "button" id = "newCookie" title = "创建新的 Cookie 或修改 Cookie 的值">创建</button>
+                            <button class = "button" id = "cancelCookie" disabled = "true" title = "取消创建或修改 Cookie">取消</button>
+                            <button class = "button" id = "storeCookie" disabled = "true" title = "创建或修改后保存 Cookie">保存</button>
                             <button class = "button" id = "close">关闭页面</button>
                         </td>
                     </tr>
@@ -31,20 +32,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <span id = "cookieList">
-                        <tr>
-                            <td><input type = "radio" class = "radioInput" id = "radio0"></td>
-                            <td>示例</td>
-                            <td>value</td>
-                            <td>?</td>
-                            <td>?</td>
-                        </tr>
-                    </span>
+                    <tr id = "cookieList">
+                        <td><input type = "radio" class = "radioInput" id = "radio0"></td>
+                        <td>示例</td>
+                        <td>value</td>
+                        <td>?</td>
+                        <td>?</td>
+                    </tr>
+                </tbody>
+                <tfoot>
                     <tr>
                         <td><input type = "radio" class = "radioInput" id = "radioSlitText"></td>
                         <td><input type = "text" class = "slitText input" id = "nameInput" spellcheck = "false" title = "输入name名"></td>
                         <td><input type = "text" class = "slitText input" id = "valueInput" spellcheck = "false" title = "输入值"></td>
-                        <td><input type = "text" class = "slitText input" id = "timeInput" title = "过期时间"></td>
+                        <td><input type = "datetime-local" step = "1" class = "slitText input" id = "timeInput" title = "过期时间"></td>
                         <td><input type = "text" class = "slitText input" id = "pathInput" spellcheck = "false" title = "输入路径" value = "/"></td>
                     </tr>
                     <tr>
@@ -54,7 +55,7 @@
                     <tr>
                         <td colspan = "5"><textarea id = "overallCookieTextarea" spellcheck = "false" title = "显示 document.cookie"></textarea></td>
                     </tr>
-                </tbody>
+                </tfoot>
             </table>
         </div>
     </body>
